@@ -1,5 +1,3 @@
-
-  
 require 'rails_helper'
 
 RSpec.feature 'Recipe #Show', type: :feature do
