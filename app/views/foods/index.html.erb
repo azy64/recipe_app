@@ -19,7 +19,7 @@
       <% @foods.each do |food| %>
       <tr>
         <th scope="row">
-          <%= link_to food_url(food.id), class: "text-decoration-none" do %>
+          <%= link_to food_url(food), class: "text-decoration-none" do %>
           <%= food.name %>
           <% end %>
         </th>
@@ -27,7 +27,7 @@
         <td> $ <%= food.price %></td>
         <% if can? :destroy, food %>
         <td>
-          <%= link_to "Delete Food", food_url(food), method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-sm btn-danger"%>
+          <%= link_to "Delete Food", destroy_food_url(food), method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-sm btn-danger"%>
         </td>
         <% end %>
       </tr>

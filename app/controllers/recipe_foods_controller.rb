@@ -1,5 +1,5 @@
 class RecipeFoodsController < ApplicationController
-  before_action :set_recipe, only: %i[create destroy]
+  before_action :set_recipe, only: %i[create]
 
   def create
     @recipe_foods = @recipe.recipe_foods.build(recipe_foods_params)
@@ -18,10 +18,10 @@ class RecipeFoodsController < ApplicationController
   def destroy
     @recipe_food = RecipeFood.includes(:recipe, :food).find(params[:id])
     @recipe_food.delete
-
-    respond_to do |format|
-      format.html { redirect_to recipe_path(@recipe.id), notice: 'Ingredient deleted successfully' }
-    end
+    redirect_to recipes_path
+    # respond_to do |format|
+    #  format.html { redirect_to recipe_path(@recipe.id), notice: 'Ingredient deleted successfully' }
+    # end
   end
 
   private
