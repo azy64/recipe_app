@@ -1,4 +1,4 @@
-class AddUserRefToFoods < ActiveRecord::Migration[7.0]
+class AddUserRefToFoods < ActiveRecord::Migration[6.1]
   def change
     add_reference :foods, :user, null: false, foreign_key: true
   end
