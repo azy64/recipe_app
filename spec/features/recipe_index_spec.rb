@@ -4,7 +4,7 @@ RSpec.feature 'RecipeIndices', type: :feature do
   background do
     visit new_user_session_path
 
-    @user = User.create(name: 'Dammy', email: 'dammy@gmail.com', password: 'qwerty')
+    @user = User.create(name: 'Henry', email: 'henry@gmail.com', password: 'qwerty')
     @recipe = Recipe.create(name: 'Curry', description: 'Very nice one', cooking_time: 10, preparation_time: 20,
                             user_id: @user.id)
 

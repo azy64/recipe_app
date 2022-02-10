@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RecipeFood, type: :model do
   it 'valid if quantity is present' do
-    @user = User.create!(name: 'shittu', email: 'shittu@gmail.com', password: 'qwerty')
+    @user = User.create!(name: 'henry', email: 'henry@gmail.com', password: 'kkkkkk')
     @food = @user.foods.create(name: 'Chapo', measurement_unit: 'grams', price: 150)
     @recipe = @user.recipes.create(name: 'Chapo', preparation_time: 30, cooking_time: 150, description: 'new testts',
                                    public: true)
@@ -11,7 +11,7 @@ RSpec.describe RecipeFood, type: :model do
   end
 
   it 'valid if quantity is present' do
-    @user = User.create!(name: 'shittu', email: 'shittu@gmail.com', password: 'qwerty')
+    @user = User.create!(name: 'henry', email: 'henry@gmail.com', password: 'kkkkkk')
     @food = @user.foods.create(name: 'Chapo', measurement_unit: 'grams', price: 150)
     @recipe = @user.recipes.create(name: 'Chapo', preparation_time: 30, cooking_time: 150, description: 'new testts',
                                    public: true)
@@ -20,7 +20,7 @@ RSpec.describe RecipeFood, type: :model do
   end
 
   it 'must be associated with a recipe' do
-    @user = User.create!(name: 'shittu', email: 'shittu@gmail.com', password: 'qwerty')
+    @user = User.create!(name: 'henry', email: 'henry@gmail.com', password: 'kkkkkk')
     @food = @user.foods.create(name: 'Chapo', measurement_unit: 'grams', price: 150)
     @recipe = @user.recipes.create(name: 'Chapo', preparation_time: 30, cooking_time: 150, description: 'new testts',
                                    public: true)
