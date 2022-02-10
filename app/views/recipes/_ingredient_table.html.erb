@@ -17,7 +17,7 @@
 
                 <td>
                   <% if current_user.id == r.recipe.user_id %>
-                    <%= link_to 'Remove', "/recipes/#{rec.id}/recipe_foods/#{r.id}", method: :delete, class: 'btn btn-danger' %>
+                    <%= link_to 'Remove', destroy_recipe_foods_url(r), method: :delete, class: 'btn btn-danger' %>
                   <% end %>
                 </td>
                 <% end %>

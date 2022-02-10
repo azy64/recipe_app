@@ -23,7 +23,7 @@
             </div>
             <div>
               <% if can? :destroy, recipe %>
-                <%= link_to "Remove", recipe_path(recipe.id), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+                <%= link_to "Remove", destroy_recipe_url(recipe), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
               <% end %>
             </div>
           </div>

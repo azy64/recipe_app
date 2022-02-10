@@ -2,7 +2,7 @@
   <div class="w-75 mx-auto">
     <div class="d-flex justify-content-between align-items-center">
     <div class="space">
-      <%= link_to 'Back', authenticated_root_path, class: "btn btn-primary" %>
+      <%= link_to 'Back', recipes_url, class: "btn btn-primary" %>
     </div>
       <% if @recipe.user_id == current_user.id %>
       <%= render '/foods/food_modal' %>
@@ -29,7 +29,7 @@
 
     <% if @recipe.user_id == current_user.id %>
       <section class="d-flex justify-content-center align-items-center gap-5 my-5 pb-4 border-bottom border-2 border-success">
-        <%= button_tag 'Generate Shopping List', class: "btn btn-success" %>
+        <%= link_to 'Generate Shopping List', general_shopping_list_index_url, class: "btn btn-success" %>
         <%= render 'ingredients_modal', recipe: @recipe %>
       </section>
     <% end %>

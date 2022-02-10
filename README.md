@@ -2,43 +2,39 @@
 
 # Recipe App
 
-This is the fourth time at Microverse that we will build a project in a group. Let's refresh on the processes and tools that we will be using with your team. Besides - it's time to check what exactly we will build!
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+> The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Postgresql](https://www.postgresql.org/download/) installed on your system.
 
+- Install rails by running `gem install rails`
 
-To get a local copy up and running follow these simple example steps.
+- Clone this repository by running `git clone https://github.com/azy64/recipe_app.git` in your command line.
 
-### Prerequisites
+- Navigate to the repository by running `cd recipe_app`.
 
-### Setup
+- Run `bundle install` to install all gems
 
-### Install
+- Run `rails db:create`, and `rails db:migrate`  to create and migrate your database.
 
-### Usage
+- Run `rails s` and go to http:localhost:3000 to view the app.
 
-### Run tests
+## Testing
 
-### Deployment
+- Run `rspec spec` to run all the test cases.
 
+- Run `rspec spec/folder_name/spec_file_name` to run test files individually.
+
+## Built With
+
+- Ruby On Rails
+- Rspec Rails
+- Ruby Gems
+
+## Version Control System
+
+- Git
 
 
 ## Authors
